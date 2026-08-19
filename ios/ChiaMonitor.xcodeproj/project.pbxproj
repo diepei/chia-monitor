@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 71;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* ChiaMonitorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000001 /* ChiaMonitorApp.swift */; };
+		A10000000000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000002 /* ContentView.swift */; };
+		A10000000000000000000003 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000003 /* SetupView.swift */; };
+		A10000000000000000000004 /* MinerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000004 /* MinerConfiguration.swift */; };
+		A10000000000000000000005 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000005 /* KeychainStore.swift */; };
+		A10000000000000000000006 /* ChiaOutputParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000006 /* ChiaOutputParser.swift */; };
+		A10000000000000000000007 /* SSHService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000007 /* SSHService.swift */; };
+		A10000000000000000000008 /* FarmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000008 /* FarmViewModel.swift */; };
+		A10000000000000000000009 /* FarmSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000009 /* FarmSnapshot.swift */; };
+		A1000000000000000000000A /* FarmSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000009 /* FarmSnapshot.swift */; };
+		A1000000000000000000000B /* ChiaWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000A /* ChiaWidget.swift */; };
+		A1000000000000000000000C /* Citadel in Frameworks */ = {isa = PBXBuildFile; productRef = D10000000000000000000002 /* Citadel */; };
+		A1000000000000000000000D /* ChiaWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000C /* ChiaWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E10000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F10000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C10000000000000000000002;
+			remoteInfo = ChiaWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E10000000000000000000002 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A1000000000000000000000D /* ChiaWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B10000000000000000000001 /* ChiaMonitorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChiaMonitorApp.swift; sourceTree = "<group>"; };
+		B10000000000000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B10000000000000000000003 /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		B10000000000000000000004 /* MinerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinerConfiguration.swift; sourceTree = "<group>"; };
+		B10000000000000000000005 /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
+		B10000000000000000000006 /* ChiaOutputParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChiaOutputParser.swift; sourceTree = "<group>"; };
+		B10000000000000000000007 /* SSHService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHService.swift; sourceTree = "<group>"; };
+		B10000000000000000000008 /* FarmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmViewModel.swift; sourceTree = "<group>"; };
+		B10000000000000000000009 /* FarmSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmSnapshot.swift; sourceTree = "<group>"; };
+		B1000000000000000000000A /* ChiaWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChiaWidget.swift; sourceTree = "<group>"; };
+		B1000000000000000000000B /* ChiaMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChiaMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1000000000000000000000C /* ChiaWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ChiaWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1000000000000000000000D /* ChiaMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChiaMonitor.entitlements; sourceTree = "<group>"; };
+		B1000000000000000000000E /* ChiaWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChiaWidget.entitlements; sourceTree = "<group>"; };
+		B1000000000000000000000F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E20000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000000000000000000000C /* Citadel in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E20000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F20000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				F20000000000000000000002 /* ChiaMonitor */,
+				F20000000000000000000003 /* ChiaWidget */,
+				F20000000000000000000004 /* Shared */,
+				F20000000000000000000005 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F20000000000000000000002 /* ChiaMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000001 /* ChiaMonitorApp.swift */,
+				B10000000000000000000002 /* ContentView.swift */,
+				B10000000000000000000003 /* SetupView.swift */,
+				B10000000000000000000004 /* MinerConfiguration.swift */,
+				B10000000000000000000005 /* KeychainStore.swift */,
+				B10000000000000000000006 /* ChiaOutputParser.swift */,
+				B10000000000000000000007 /* SSHService.swift */,
+				B10000000000000000000008 /* FarmViewModel.swift */,
+				B1000000000000000000000D /* ChiaMonitor.entitlements */,
+			);
+			path = ChiaMonitor;
+			sourceTree = "<group>";
+		};
+		F20000000000000000000003 /* ChiaWidget */ = {
+			isa = PBXGroup;
+			children = (
+				B1000000000000000000000A /* ChiaWidget.swift */,
+				B1000000000000000000000E /* ChiaWidget.entitlements */,
+				B1000000000000000000000F /* Info.plist */,
+			);
+			path = ChiaWidget;
+			sourceTree = "<group>";
+		};
+		F20000000000000000000004 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000009 /* FarmSnapshot.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F20000000000000000000005 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1000000000000000000000B /* ChiaMonitor.app */,
+				B1000000000000000000000C /* ChiaWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C10000000000000000000001 /* ChiaMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F50000000000000000000001 /* Build configuration list for PBXNativeTarget "ChiaMonitor" */;
+			buildPhases = (
+				E30000000000000000000001 /* Sources */,
+				E20000000000000000000001 /* Frameworks */,
+				E40000000000000000000001 /* Resources */,
+				E10000000000000000000002 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E50000000000000000000001 /* PBXTargetDependency */,
+			);
+			name = ChiaMonitor;
+			packageProductDependencies = (
+				D10000000000000000000002 /* Citadel */,
+			);
+			productName = ChiaMonitor;
+			productReference = B1000000000000000000000B /* ChiaMonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C10000000000000000000002 /* ChiaWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F50000000000000000000002 /* Build configuration list for PBXNativeTarget "ChiaWidget" */;
+			buildPhases = (
+				E30000000000000000000002 /* Sources */,
+				E20000000000000000000002 /* Frameworks */,
+				E40000000000000000000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChiaWidget;
+			packageProductDependencies = (
+			);
+			productName = ChiaWidget;
+			productReference = B1000000000000000000000C /* ChiaWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F10000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					C10000000000000000000001 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					C10000000000000000000002 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+				};
+			};
+			buildConfigurationList = F50000000000000000000003 /* Build configuration list for PBXProject "ChiaMonitor" */;
+			compatibilityVersion = "Xcode 16.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F20000000000000000000001;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D10000000000000000000001 /* XCRemoteSwiftPackageReference "Citadel" */,
+			);
+			productRefGroup = F20000000000000000000005 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C10000000000000000000001 /* ChiaMonitor */,
+				C10000000000000000000002 /* ChiaWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E40000000000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E40000000000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E30000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000001 /* ChiaMonitorApp.swift in Sources */,
+				A10000000000000000000002 /* ContentView.swift in Sources */,
+				A10000000000000000000003 /* SetupView.swift in Sources */,
+				A10000000000000000000004 /* MinerConfiguration.swift in Sources */,
+				A10000000000000000000005 /* KeychainStore.swift in Sources */,
+				A10000000000000000000006 /* ChiaOutputParser.swift in Sources */,
+				A10000000000000000000007 /* SSHService.swift in Sources */,
+				A10000000000000000000008 /* FarmViewModel.swift in Sources */,
+				A10000000000000000000009 /* FarmSnapshot.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E30000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000000000000000000000A /* FarmSnapshot.swift in Sources */,
+				A1000000000000000000000B /* ChiaWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E50000000000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C10000000000000000000002 /* ChiaWidget */;
+			targetProxy = E10000000000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F60000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F60000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F60000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ChiaMonitor/ChiaMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BYLG3GZ9US;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Chia Monitor";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diepei.chiamonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F60000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ChiaMonitor/ChiaMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BYLG3GZ9US;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Chia Monitor";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diepei.chiamonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F60000000000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ChiaWidget/ChiaWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BYLG3GZ9US;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ChiaWidget/Info.plist;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diepei.chiamonitor.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F60000000000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ChiaWidget/ChiaWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BYLG3GZ9US;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ChiaWidget/Info.plist;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diepei.chiamonitor.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F50000000000000000000001 /* Build configuration list for PBXNativeTarget "ChiaMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F60000000000000000000003 /* Debug */,
+				F60000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F50000000000000000000002 /* Build configuration list for PBXNativeTarget "ChiaWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F60000000000000000000005 /* Debug */,
+				F60000000000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F50000000000000000000003 /* Build configuration list for PBXProject "ChiaMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F60000000000000000000001 /* Debug */,
+				F60000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D10000000000000000000001 /* XCRemoteSwiftPackageReference "Citadel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/orlandos-nl/Citadel.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.12.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D10000000000000000000002 /* Citadel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D10000000000000000000001 /* XCRemoteSwiftPackageReference "Citadel" */;
+			productName = Citadel;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F10000000000000000000001 /* Project object */;
+}

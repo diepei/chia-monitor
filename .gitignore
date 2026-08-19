@@ -44,3 +44,7 @@ yarn-error.log*
 /agent/.venv/
 __pycache__/
 *.pyc
+
+# Xcode per-user state
+xcuserdata/
+*.xcuserstate

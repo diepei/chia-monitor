@@ -2,6 +2,24 @@
 
 A small, private Chia farm monitor designed to answer one question quickly: **is my farm healthy?** It combines a read-only Python agent, a phone-first PWA, and an iPhone Scriptable widget.
 
+## Fastest miner installation
+
+Tagged releases build a checksum-verified standalone agent for Linux x86-64, Linux ARM64 and Apple Silicon. It needs no Python, pip, Node, Docker or database on the miner:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/diepei/chia-monitor/main/install.sh | bash
+```
+
+For the recommended Widgy connection through private Tailscale HTTPS, follow [`widgy/AGENT_SETUP.md`](widgy/AGENT_SETUP.md).
+
+For a ready-to-use native-style iPhone widget with automatic configuration, caching and local alerts, follow [`scriptable/README.md`](scriptable/README.md).
+
+## Agentless iPhone MVP
+
+The `ios/` project is the new agentless MVP: a native SwiftUI app connects directly to an existing Linux/macOS miner over SSH and shares a health snapshot with a WidgetKit Home Screen widget. It requires no Chia Monitor installation on the miner. See [`ios/README.md`](ios/README.md) for Xcode, signing, SSH, and widget setup.
+
+For a no-code Widgy alternative, see [`widgy/README.md`](widgy/README.md). It uses an iOS Shortcut to query the miner through SSH and feeds Widgy through iCloud text files, with nothing installed on the miner.
+
 ## What it shows
 
 - Farmer, node sync, plots, farm size, harvesters, and latest signage activity
@@ -70,6 +88,7 @@ Farm-data routes require `Authorization: Bearer <token>`:
 
 - `GET /api/status` — complete dashboard payload
 - `GET /api/widget` — compact widget payload with at most three alerts
+- `GET /api/widgy` — flat, display-ready strings for Widgy JSON layers
 - `GET /healthz` — unauthenticated process liveness only
 
 The collector caches a snapshot for 30 seconds by default. Health starts at 100: a critical condition costs 25 points and a warning costs 10. This is only a monitor—there are no wallet-send, plot, key, or start/stop endpoints.
