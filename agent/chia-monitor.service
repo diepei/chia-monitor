@@ -1,0 +1,18 @@
+[Unit]
+Description=Chia Monitor agent
+After=network-online.target chia-farmer.service
+
+[Service]
+Type=simple
+User=chia
+WorkingDirectory=/opt/chia-monitor/agent
+ExecStart=/opt/chia-monitor/.venv/bin/python -m chia_monitor.main --config /etc/chia-monitor/config.yaml
+Restart=on-failure
+RestartSec=10
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/tmp
+
+[Install]
+WantedBy=multi-user.target

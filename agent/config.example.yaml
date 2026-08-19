@@ -1,0 +1,17 @@
+# Bind to localhost for local-only use, or your Tailscale IP for remote access.
+host: "127.0.0.1"
+port: 8926
+api_token: "replace-with-a-long-random-token"
+chia_root: "~/.chia/mainnet"
+refresh_seconds: 30
+activity_stale_seconds: 300
+allowed_origins:
+  - "http://localhost:3000"
+# Only these disks are checked. Use device paths reported by lsblk/diskutil.
+disks:
+  - name: "Farm 01"
+    mountpoint: "/mnt/farm01"
+    device: "/dev/sda"
+  - name: "Farm 02"
+    mountpoint: "/mnt/farm02"
+    device: "/dev/sdb"
