@@ -1,0 +1,19 @@
+# Windows example. Keep this bound to localhost; Tailscale Serve exposes it privately.
+host: "127.0.0.1"
+port: 8926
+api_token: "replace-with-a-long-random-token"
+chia_root: "~/.chia/mainnet"
+refresh_seconds: 30
+activity_stale_seconds: 300
+# Set true temporarily to record RPC endpoints, certificates, HTTP results and
+# response previews in chia-monitor.log. Tokens and private keys are not logged.
+rpc_debug: false
+# Add only the Windows farm drives you want monitored.
+# PhysicalDrive is optional and requires smartmontools for temperature/SMART.
+disks:
+  - name: "Farm 01"
+    mountpoint: "D:\\"
+    device: "\\\\.\\PhysicalDrive1"
+  - name: "Farm 02"
+    mountpoint: "E:\\"
+    device: "\\\\.\\PhysicalDrive2"
